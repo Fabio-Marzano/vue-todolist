@@ -1,5 +1,5 @@
 const { createApp } = Vue
-
+//CREO ARRAY//
 createApp({
     data() {
         return {
@@ -31,6 +31,7 @@ createApp({
         }
     },
     methods: {
+        //CREO FUNZIONE CHE CANCELLA GLI OGGETTI//
         deleteTask(index) {
             this.toodlist.splice(index, 1);
         }, 
