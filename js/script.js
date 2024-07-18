@@ -35,6 +35,6 @@ createApp({
         deleteTask(index) {
             this.toodlist.splice(index, 1);
         }, 
-        
+
     }
 }).mount('#app')
