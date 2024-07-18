@@ -31,7 +31,7 @@ createApp({
         }
     },
     methods: {
-        //ATTIVO CHE CANCELLA GLI OGGETTI//
+        //ATTIVO FUNZIONE CHE CANCELLA GLI OGGETTI//
         deleteTask(index) {
             this.toodlist.splice(index, 1);
         }, 
