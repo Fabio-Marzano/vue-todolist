@@ -1,10 +1,10 @@
-const { createApp, ref } = Vue
+const { createApp } = Vue
 
 createApp({
     data() {
         return {
             
-
+            newTask: null,
             toodlist: [//array di oggetti
                 {
                     
@@ -31,6 +31,9 @@ createApp({
         }
     },
     methods: {
+        deleteTask(index) {
+            this.toodlist.splice(index, 1);
+        }, 
         
     }
 }).mount('#app')
