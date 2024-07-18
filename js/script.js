@@ -31,10 +31,18 @@ createApp({
         }
     },
     methods: {
-        //CREO FUNZIONE CHE CANCELLA GLI OGGETTI//
+        //ATTIVO CHE CANCELLA GLI OGGETTI//
         deleteTask(index) {
             this.toodlist.splice(index, 1);
         }, 
-
+        //ATTIVO FUNZIONE PER AGGIUNGERE GLI OGGETTI//
+        addTask() {
+            const newObj = {
+                text: this.newTask,
+                done: false
+            }
+            this.toodlist.push(newObj);
+            this.newTask = null;
+        }
     }
 }).mount('#app')
